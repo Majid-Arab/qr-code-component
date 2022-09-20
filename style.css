@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Montserrat&family=Outfit:wght@100;200;400&display=swap');
 
 .attribution {
   font-size: 11px;
@@ -12,139 +11,47 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   display:grid;
   place-items:center;
   min-height:100vh;
-  font-family: "Fraunces", serif;
+  font-family: 'Outfit', sans-serif;
   background: hsl(26 40% 92%);
   grid-template-rows:1fr;
   overflow:hidden;
 }
 
-.main {
-  max-width: 600px;
-  margin: auto;
-  padding-inline: 20px;
-}
-
 .container {
   display: flex;
   justify-content: center;
-  border-radius: 10px;
+  align-items: center;
+  width: 350px;
   background-color: #fff;
   overflow: hidden;
+  flex-flow: column;
+  border-radius: 10px;
+  /* padding: 10px; */
+  padding: 20px 0px 0px 0px;
+
 }
 
-.containerImg {
-  max-width: 300px;
-  height: 100%;
+img {
+  max-width: 300px; 
+  border-radius: 10px;
 }
 
-.infoBox {
-  padding: 10px 30px 0px 30px;
-  width: 100%;
-}
-
-.heading {
-  font-size: clamp(1rem, 0.8rem + 1.5vw, 2rem);
+.heading{
+  text-align: center;
+  padding: 20px 40px 10px 40px;
 }
 
 .para {
-  color: rgb(128, 127, 131);
-  font-size: 14px;
-}
-
-.subTitle {
-  letter-spacing: 2px;
-  font-size: 14px;
-}
-
-.pricePara {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding-top: 15px;
-  padding-bottom: 10px;
-}
-
-.pricePara span:nth-child(2) {
   text-align: center;
-}
-
-.pricePara .price {
-  color: rgb(61, 128, 104);
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.pricePara .total {
+  color: rgb(128, 127, 131);
+  padding: 10px 40px 30px 40px;
   font-size: 14px;
-}
-
-.btn img {
-  padding-right: 5px;
-}
-
-.btn {
-  border: none; 
-  /* font-size: ; */
-  letter-spacing: 1px;
-  background-color: rgb(62, 128, 104);
-  color: #fff;
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-@media screen and (max-width: 500px) {
-  .container {
-    flex-direction: column;
-    overflow: visible;
-  }
-
-  .heading {
-    font-size: 40px;
-    font-weight: 900;
-  }
-
-  .para {
-    color: rgb(128, 127, 131);
-    font-size: 20px;
-  }
-
-  .containerImg {
-    max-width: 450px;
-
-  }
-
-  .pricePara .price {
-    color: rgb(61, 128, 104);
-    font-size: 40px;
-    font-weight: 700;
-  }
-  
-  .pricePara .total {
-    font-size: 20px;
-  }
-
-  .btn img {
-    padding-right: 5px;
-    width: 7%;
-  }
-
-  .infoBox {
-    padding: 10px 30px 20px 30px;
-  }
-  
-  .btn {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    background-color: rgb(62, 128, 104);
-    padding: 20px;
-    border-radius:10px;
-  }
 }
