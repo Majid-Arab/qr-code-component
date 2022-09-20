@@ -12,7 +12,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 body {
@@ -26,32 +25,26 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
+  text-align: center;
+  width: 300px;
   background-color: #fff;
   overflow: hidden;
-  flex-flow: column;
   border-radius: 10px;
-  /* padding: 10px; */
-  padding: 20px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
 
 }
 
 img {
-  max-width: 300px; 
+  max-width: 270px; 
   border-radius: 10px;
 }
 
-.heading{
-  text-align: center;
-  padding: 20px 40px 10px 40px;
+h3{
+  padding: 10px 30px 10px 30px;
 }
 
-.para {
-  text-align: center;
+p {
   color: rgb(128, 127, 131);
-  padding: 10px 40px 30px 40px;
+  padding: 0px 30px 20px 30px;
   font-size: 14px;
 }
